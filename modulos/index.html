@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loging and register</title>
+    <link rel="stylesheet" href="estilos/Style.css">
+</head>
+<body>
+    <main>
+        <div class="contenedor">
+            <div class="caja-Trasera">
+                <div class="caja-TraseraLogin">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión para ingresar a la página</p>
+                    <button id="btn-iniciarSesion">Iniciar sesión</button>
+                </div>
+                <div class="caja-TraseraRegister">
+                    <h3>¿Aún no tienes una cuenta?</h3>
+                    <p>Registrate para que puedas iniciar sesión</p>
+                    <button id="btn-Registrate">¡Registrate!</button>
+                </div>
+                <div class="contenedor-formulario">
+                    <form action="" class="formulario-Login">
+                        <h2>Iniciar sesión</h2>
+                        <input type="text" placeholder="Nombre de usuario">
+                        <input type="password" placeholder="Contraseña">
+                        <button>ingresar</button>
+                    <form action="" class="formulario-Register">
+                        <h2>Regístrate</h2>
+                        <input type="text" placeholder="Ingresa tus nombres">
+                        <input type="text" placeholder="Ingresa tus apellidos">
+                        <select name="tipoDocumento" id="tipoDocumento">
+                            <option value="defecto"></option>
+                            <option value="CC">CC "Cedula de ciudadania"</option>
+                            <option value="TI">TI "Tarjeta de identidad"</option>
+                            <option value="CE">CE "Cedula de extranjeria</option>
+                        </select>
+                        <input type="number" placeholder="Ingresa tu número de documento">
+                        <input type="text" placeholder="Ingresa tu dirección">
+                        <input type="tel" placeholder="Ingresa tu número de telefono fijo">
+                        <input type="tel" placeholder="Ingresa tu número celular">
+                        <input type="email" placeholder="Ingresa tu correo electronico">
+                        <p>Ingresa tu fecha de nacimiento</p>
+                        <input type="date">
+                        <input type="text" placeholder="Ingresa un nombre de usuario">
+                        <button>Registrarse</button>
+                    </form>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
