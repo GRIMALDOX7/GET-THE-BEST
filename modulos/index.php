@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loging and register</title>
-    <link rel="stylesheet" href="../estilos/Style.css">
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
     <main>
@@ -23,21 +23,20 @@
             </div>
             <div class="contenedor-Formulario">
 
-                <form action="" class="formulario-Login">
+                <form class="formulario-Login">
                         <h2>Iniciar sesión</h2>
                         <input type="text" placeholder="Nombre de usuario">
                         <input type="password" placeholder="Contraseña">
                         <button>ingresar</button>
                 </form>
 
-                <form action="../base_de_datos/registro_usuario.php" method = "POST" class="formulario-Register">
+                <form method = "POST" class="formulario-Register">
                     <h2>Regístrate</h2>
                     <input type="text" placeholder="Ingresa tus nombres" name="nombres">
                     <input type="text" placeholder="Ingresa tus apellidos" name="apellidos">
-                    <input name="tipoDocumento" placeholder = "Ingresa tu tipo de documento" name="tipoDocumento">
-                    <input type="tel" placeholder="Ingresa tu número de documento" name="documento">
+                    <input type="text" placeholder = "Ingresa tu tipo de documento" name="tipoDocumento">
+                    <input type="text" placeholder="Ingresa tu número de documento" name="documento">
                     <input type="text" placeholder="Ingresa tu dirección" name="direccion">
-                    <input type="tel" placeholder="Ingresa tu número de telefono fijo" name="telefonoFijo">
                     <input type="tel" placeholder="Ingresa tu número celular" name="telefonoCelular">
                     <input type="email" placeholder="Ingresa tu correo electronico" name="correo">
                     <p>Ingresa tu fecha de nacimiento</p>
@@ -50,6 +49,9 @@
             
         </div>
     </main>
-    <script src="../js/script.js"></script>
+    <script src="script.js"></script>
+    <?php
+    include("registro_usuario.php")
+    ?>
 </body>
 </html>

@@ -151,3 +151,17 @@ main{
         position: relative;
     }
 }
+.ok{
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(50, 86, 23);
+    color: white;
+}
+.bad{
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(50, 86, 23);
+    color: black;
+}
