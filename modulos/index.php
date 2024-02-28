@@ -30,25 +30,21 @@
                         <button>ingresar</button>
                 </form>
 
-                <form action="" class="formulario-Register">
+                <form action="../base_de_datos/registro_usuario.php" method = "POST" class="formulario-Register">
                     <h2>Regístrate</h2>
-                    <input type="text" placeholder="Ingresa tus nombres">
-                    <input type="text" placeholder="Ingresa tus apellidos">
-                    <select name="tipoDocumento" id="tipoDocumento">
-                        <option value="defecto">Selecciona tu tipo de documento</option>
-                        <option value="CC">CC "Cedula de ciudadania"</option>
-                        <option value="TI">TI "Tarjeta de identidad"</option>
-                        <option value="CE">CE "Cedula de extranjeria</option>
-                    </select>
-                    <input type="tel" placeholder="Ingresa tu número de documento">
-                    <input type="text" placeholder="Ingresa tu dirección">
-                    <input type="tel" placeholder="Ingresa tu número de telefono fijo">
-                    <input type="tel" placeholder="Ingresa tu número celular">
-                    <input type="email" placeholder="Ingresa tu correo electronico">
+                    <input type="text" placeholder="Ingresa tus nombres" name="nombres">
+                    <input type="text" placeholder="Ingresa tus apellidos" name="apellidos">
+                    <input name="tipoDocumento" placeholder = "Ingresa tu tipo de documento" name="tipoDocumento">
+                    <input type="tel" placeholder="Ingresa tu número de documento" name="documento">
+                    <input type="text" placeholder="Ingresa tu dirección" name="direccion">
+                    <input type="tel" placeholder="Ingresa tu número de telefono fijo" name="telefonoFijo">
+                    <input type="tel" placeholder="Ingresa tu número celular" name="telefonoCelular">
+                    <input type="email" placeholder="Ingresa tu correo electronico" name="correo">
                     <p>Ingresa tu fecha de nacimiento</p>
-                    <input type="date">
-                    <input type="text" placeholder="Ingresa un nombre de usuario">
-                    <button>Registrarse</button>
+                    <input type="date" name="fechaNacimiento">
+                    <input type="text" placeholder="Ingresa un nombre de usuario" name="userName">
+                    <input type="password" placeholder ="Ingresa una contraseña" name="contrasena">
+                    <input type="submit" name="registrarse">
                 </form>
             </div>
             
